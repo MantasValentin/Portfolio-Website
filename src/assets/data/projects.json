@@ -1,0 +1,39 @@
+{
+  "Projects":[
+    {
+      "Name": "Password Generator",
+      "Description": "A password generators that gives multiple options on generating a password, cheks in breached password databases for the password and calculates the password's entropy",
+      "Languages": "HTML, CSS, TailwindCSS, React Typescript",
+      "Git": "https://github.com/MantasValentin/Password-Generator/",
+      "Link": "https://passwordgenerator.mantasval.com/"
+    },
+    {
+      "Name": "Minesweeper",
+      "Description": "An almost complete replica of the old minesweeper game",
+      "Languages": "HTML, SCSS, React Typescript",
+      "Git": "https://github.com/MantasValentin/Minesweeper/",
+      "Link": "https://minesweeper.mantasval.com/"
+    },
+    {
+      "Name": "Todo List",
+      "Description": "A simple CRUD app with drag and drop functionality where to-dos are saved in localstorage.",
+      "Languages": "HTML, TailwindCSS, React Typescript",
+      "Git": "https://github.com/MantasValentin/Todo-List/",
+      "Link": "https://todolist.mantasval.com/"
+    },
+    {
+      "Name": "Portfolio Website",
+      "Description": "My personal portfolio website",
+      "Languages": "HTML, SCSS, TailwindCSS, JS, React Typescript",
+      "Git": "https://github.com/MantasValentin/Portfolio-Website/",
+      "Link": "https://mantasval.com/"
+    },
+    {
+      "Name": "Code Editor",
+      "Description": "Live HTML, CSS, JS code editor",
+      "Languages": "HTML, TailwindCSS, JS, React Typescript",
+      "Git": "https://github.com/MantasValentin/Code-Editor/",
+      "Link": "http://codeeditor.mantasval.com/"
+    }
+  ]
+}

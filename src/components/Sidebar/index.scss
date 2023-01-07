@@ -1,0 +1,17 @@
+nav {
+  a {
+    &:hover {
+      svg {
+        transition-duration: 300ms;
+        scale: 1.15;
+        color: #ff8000 !important;
+      }
+    }
+    
+    &.active {
+      svg {
+        color: #ff8000 !important;
+      }
+    }
+  }
+}
