@@ -34,7 +34,7 @@ const About = () => {
             />
           </h1>
           <p className="info_1 text-white text-xl max-lg:text-lg max-sm:text-sm font-[sans-serif] py-2 max-lg:text-center">
-            I'm a ambitious front-end developer located in Lithuania
+            I'm an ambitious front-end developer located in Lithuania
             looking for a role in an established IT company with the opportunity
             to work with the latest technologies on challenging and diverse
             projects.

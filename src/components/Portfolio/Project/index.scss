@@ -1,0 +1,11 @@
+@for $i from 1 through 5 {
+  .project_#{$i} {
+    animation: fadeIn 1.5s  #{calc($i / 10 + 1.6)}s backwards;
+  }
+}
+
+.project {
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  border: 1px solid #ff8000;
+}

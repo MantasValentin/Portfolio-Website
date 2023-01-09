@@ -1,7 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, FunctionComponent as FC } from "react";
 import "./index.scss";
 
-const AnimatedLetters = ({ letterClass, strArray, time,idx }) => {
+interface props {
+  letterClass: string;
+  strArray: string[];
+  time: number;
+  idx: number;
+}
+
+const AnimatedLetters: FC<props> = ({ letterClass, strArray, time, idx }) => {
   const [animated, setAnimated] = useState(false);
   const [hover, setHover] = useState(false);
 
@@ -14,7 +21,7 @@ const AnimatedLetters = ({ letterClass, strArray, time,idx }) => {
 
   return (
     <span>
-      {strArray.map((char, i) => (
+      {strArray.map((char: any, i: number) => (
         <span
           onMouseEnter={() => setAnimated(() => true)}
           onAnimationEnd={() => setAnimated(() => false)}

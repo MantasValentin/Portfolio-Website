@@ -22,7 +22,6 @@ const Home = () => {
 
   return (
     <div className="flex-1 h-screen max-lg:h-auto max-lg:w-screen pl-16 max-lg:pl-0 max-lg:pt-40 max-sm:pt-16">
-      <div className="w-full h-full">
         <div className="flex flex-col w-full h-full justify-center max-lg:items-center">
           <h1 className="introduction text-white text-[8rem] max-lg:text-[6rem] leading-[6rem] max-lg:leading-[5rem] max-sm:text-[3rem] max-sm:leading-[2.5rem] max-lg:text-center">
             <AnimatedLetters
@@ -74,7 +73,6 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-      </div>
       <Loader type="pacman" active />
     </div>
   );

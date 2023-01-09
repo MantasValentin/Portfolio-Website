@@ -1,261 +1,29 @@
-.contact-form {
-  width: 100%;
-  margin-top: 20px;
-
-  .grid-container {
-    display: grid;
-    gap: 0 10px;
-
-    .grid-item1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-
-    .grid-item2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
-
-    .grid-item3 {
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    .grid-item4 {
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-    .grid-item5 {
-      grid-row-start: 4;
-      grid-row-end: 5;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      margin-bottom: 10px;
-      opacity: 0;
-      overflow: hidden;
-      clear: both;
-      position: relative;
-      animation: fadeIn 2s 2s;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 1.6rem;
-    color: #d1d1d1;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  textarea {
-    width: 100%;
-    border: 0;
-    background: #115173;
-    height: 50px;
-    font-size: 1.6rem;
-    color: #d1d1d1;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 150px;
-  }
-
-  .flat-button {
-    color: #ff8000;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ff8000;
-    float: left;
-    border-radius: 4px;
-    background: 0 0;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px;
-  }
-}
-
-.map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
-  height: 115%;
-  margin-top: -3%;
-}
-
 .leaflet-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
 }
 
 .info-map {
-  position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
   z-index: 999999;
-  width: 267px;
-  padding: 20px;
-  color: #fff;
   font-family: "Helvetica";
-  font-size: 1.6rem;
-  font-weight: 300;
   opacity: 0;
-  animation: fadeIn 1s 1.5s;
+  animation: fadeIn 1s 2.0s;
   animation-fill-mode: forwards;
+}
 
-  span {
-    font-size: 16px;
+.send {
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  border: 1px solid #ff8000;
+}
 
-    span {
-      color: #ff8000;
-    }
+@for $i from 1 through 5 {
+  .box_#{$i} {
+    animation: fadeInUp 1s  #{calc($i / 10 + 1.8)}s backwards;
   }
 }
 
-.contact-page {
-  h1 {
-    font-size: 10rem;
-    span {
-      padding-right: 10px;
-      span {
-        padding-right: 0;
-      }
-    }
-  }
-  .text-zone {
-    p {
-      font-size: 1.5rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  .contact-page {
-    h1 {
-      margin-bottom: 20px;
-    }
-    .info-map {
-      top: 1px;
-      right: 1%;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .contact-page {
-    .text-zone {
-      left: 5%;
-      h1 {
-        font-size: 5rem;
-        margin-bottom: 10px;
-        left: 0;
-        span {
-          padding-right: 0;
-          span {
-            padding-right: 0;
-          }
-        }
-      }
-      .contact-form {
-        .grid-container {
-          .grid-item1 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-          }
-
-          .grid-item2 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-          }
-
-          .grid-item3 {
-            grid-row-start: 3;
-            grid-row-end: 4;
-            grid-column-start: 1;
-            grid-column-end: 2;
-          }
-
-          .grid-item4 {
-            grid-row-start: 4;
-            grid-row-end: 5;
-            grid-column-start: 1;
-            grid-column-end: 2;
-          }
-          .grid-item5 {
-            grid-row-start: 5;
-            grid-row-end: 6;
-            grid-column-start: 1;
-            grid-column-end: 2;
-          }
-        }
-      }
-    }
-    .info-map {
-      top: 30px;
-      right: 1%;
-    }
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .contact-page {
-    .text-zone {
-      h1 {
-        font-size: 3.5rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .contact-page {
-    .text-zone {
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 5px;
-      }
-    }
-    .info-map {
-      width: 200px;
-      font-size: 12px;
-      span {
-        font-size: 12px;
-      }
-    }
-  }
-}
-
-@font-face {
-  font-family: "Fira";
-  src: url("../../assets/fonts/FiraMono-Regular.ttf") format ("woff2");
+.box_6 {
+  animation: fadeInUp 1s  2.6s backwards;
 }
