@@ -12,7 +12,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 1800);
+    }, 2000);
   }, []);
 
   return (
@@ -23,13 +23,13 @@ const About = () => {
             <AnimatedLetter
               letterClass={letterClass}
               strArray={aboutMeArray}
-              time={1800}
+              time={2000}
               idx={15}
             />
             <AnimatedLetter
               letterClass={letterClass}
               strArray={["m", "e"]}
-              time={1800}
+              time={2000}
               idx={21}
             />
           </h1>

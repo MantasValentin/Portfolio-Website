@@ -1,6 +1,6 @@
 @for $i from 1 through 5 {
   .project_#{$i} {
-    animation: fadeIn 1.5s  #{calc($i / 10 + 1)}s backwards;
+    animation: fadeIn 1.5s  #{calc($i / 10 + 1.3)}s backwards;
   }
 }
 

@@ -12,7 +12,7 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 2000);
+    }, 2300);
   }, []);
 
   const sendEmail = (e) => {
@@ -38,13 +38,13 @@ const Contact = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={["C", "o", "n", "t", "a", "c", "t", " "]}
-              time={2000}
+              time={2300}
               idx={15}
             />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={["m", "e"]}
-              time={2000}
+              time={2300}
               idx={24}
             />
           </h1>

@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 3000);
+    }, 3300);
   }, []);
 
   return (
@@ -27,39 +27,39 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={helloArray1}
-              time={3000}
+              time={3300}
               idx={10}
             />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={helloArray2}
-              time={3000}
+              time={3300}
               idx={16}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={introArray}
-              time={3000}
+              time={3300}
               idx={22}
             />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
-              time={3000}
+              time={3300}
               idx={26}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={webArray}
-              time={3000}
+              time={3300}
               idx={33}
             />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={developerArray}
-              time={3000}
+              time={3300}
               idx={37}
             />
           </h1>
