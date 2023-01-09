@@ -70,10 +70,10 @@
 
 @for $i from 1 through 3 {
   .info_#{$i} {
-    animation: fadeIn 1.5s  #{calc($i / 10 + 1.5)}s backwards;
+    animation: fadeIn 1.5s  #{calc($i / 10 + 1)}s backwards;
   }
 }
 
 .cube {
-  animation: fadeIn 2.0s 2s backwards;
+  animation: fadeIn 2.0s 1.2s backwards;
 }

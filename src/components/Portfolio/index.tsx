@@ -50,7 +50,7 @@ const Portfolio = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
-    }, 2300);
+    }, 1800);
   }, []);
 
   return (
@@ -60,7 +60,7 @@ const Portfolio = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={["P", "r", "o", "j", "e", "c", "t", "s"]}
-            time={2300}
+            time={1800}
             idx={15}
           />
         </h1>

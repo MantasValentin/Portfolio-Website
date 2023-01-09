@@ -20,10 +20,10 @@
 
 @for $i from 1 through 5 {
   .box_#{$i} {
-    animation: fadeInUp 1s  #{calc($i / 10 + 1.8)}s backwards;
+    animation: fadeInUp 1s  #{calc($i / 10 + 1.2)}s backwards;
   }
 }
 
 .box_6 {
-  animation: fadeInUp 1s  2.6s backwards;
+  animation: fadeInUp 1s  2.0s backwards;
 }
